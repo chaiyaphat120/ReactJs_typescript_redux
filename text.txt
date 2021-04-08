@@ -4,3 +4,8 @@ https://daveceddia.com/react-redux-immutability-guide/
 
 
 https://www.typescriptlang.org/tsconfig
+
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "react-redux": "7.2.2",
+    "@types/react-redux": "7.1.15",
