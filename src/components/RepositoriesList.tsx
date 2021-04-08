@@ -9,6 +9,7 @@ const RepositoriesList: React.FC = () => {
     const { data, error, loading } = useTypedSelector(
         (state) => state.repositoriesState
     )
+    const { moviesList } = useTypedSelector((state) => state.MoviesState)
 
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
@@ -36,6 +37,11 @@ const RepositoriesList: React.FC = () => {
             >
                 Click
             </button>
+            {moviesList.map(movie =>{
+                return(
+                    <div>{movie.name} : {movie.price} {movie.quantity}  </div>
+                )
+            })}
             <form onSubmit={onSubmit}>
                 <input value={term} onChange={(e) => setTerm(e.target.value)} />
                 <button>Search</button>
