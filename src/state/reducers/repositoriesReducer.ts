@@ -1,19 +1,19 @@
-import{ActionType} from '../types/action-types'
-import {Action} from '../types/actions-type-to-reducer'
+import { ActionType } from '../types/action-types'
+import { Action } from '../types/actions-type-to-reducer'
 interface RepositoriesState {
     loading: boolean
     error: string | null
     data: string[]
 }
 
-const intialState = {
+const initialState = {
     loading: false,
     error: null,
     data: [],
 }
 
 const repositoriesReducer = (
-    state: RepositoriesState =intialState,
+    state: RepositoriesState = initialState,
     action: Action
 ): RepositoriesState => {
     switch (action.type) {
@@ -32,4 +32,4 @@ const repositoriesReducer = (
     }
 }
 
-export  {repositoriesReducer}
+export { repositoriesReducer }
