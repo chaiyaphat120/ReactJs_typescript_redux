@@ -1,5 +1,5 @@
 import { ActionType } from '../types/action-types'
-import { Action } from '../types/actions-type-to-reducer'
+import { Action } from '../types/actions-type-of-reducer/repositoriesTypeOfReducer'
 interface RepositoriesState {
     loading: boolean
     error: string | null
