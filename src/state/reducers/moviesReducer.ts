@@ -1,5 +1,5 @@
-import { ActionType } from '../types/action-types'
-import { Action } from '../types/actions-type-of-reducer/repositoriesTypeOfReducer'
+import { ActionType } from '../types/types'
+import { Action } from '../types/moviesType'
 interface RepositoriesState {
     moviesList: Array<{ name: string, price: number, quantity: number }>
 }

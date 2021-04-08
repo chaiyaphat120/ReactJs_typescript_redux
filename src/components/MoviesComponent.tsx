@@ -1,7 +1,7 @@
 import { useTypedSelector } from "../state"
 import { useDispatch } from "react-redux"
-import { ActionType } from "../state/types/action-types"
-const RepositoriesList: React.FC = () => {
+import { ActionType } from "../state/types/types"
+const MoviesComponent: React.FC = () => {
     const dispatch = useDispatch()
     const { moviesList } = useTypedSelector((state) => state.MoviesState)
 
@@ -29,4 +29,4 @@ const RepositoriesList: React.FC = () => {
         </div>
     )
 }
-export default RepositoriesList
+export default MoviesComponent
