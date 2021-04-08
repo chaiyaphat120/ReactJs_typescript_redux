@@ -15,7 +15,7 @@ const initialState = {
     ]
 }
 
-const MoviesReducer = (
+const moviesReducer = (
     state: RepositoriesState = initialState,
     action: Action
 ): RepositoriesState => {
@@ -31,4 +31,4 @@ const MoviesReducer = (
     }
 }
 
-export { MoviesReducer }
+export { moviesReducer }

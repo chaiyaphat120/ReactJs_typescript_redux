@@ -1,9 +1,9 @@
-import { useTypedSelector } from "../state"
+import { useTypedSelector } from "../redux"
 import { useDispatch } from "react-redux"
-import { ActionType } from "../state/types/types"
+import { ActionType } from "../redux/types/types"
 const MoviesComponent: React.FC = () => {
     const dispatch = useDispatch()
-    const { moviesList } = useTypedSelector((state) => state.MoviesState)
+    const { moviesList } = useTypedSelector((state) => state.moviesState)
 
     const onSubmit = (event: React.FormEvent<HTMLButtonElement>) => {
         event.preventDefault()
