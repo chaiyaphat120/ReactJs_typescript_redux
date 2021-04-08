@@ -1,9 +1,11 @@
-import {combineReducers} from 'redux'
-import {repositoriesReducer} from './repositoriesReducer'
+import { combineReducers } from 'redux'
+import { repositoriesReducer } from './repositoriesReducer'
+import { MoviesReducer } from './moviesReducer'
 
 const rootReducers = combineReducers({
-    repositoriesState : repositoriesReducer
+    repositoriesState: repositoriesReducer,
+    MoviesState: MoviesReducer
 })
 
-export {rootReducers}
+export { rootReducers }
 export type RootState = ReturnType<typeof rootReducers>
